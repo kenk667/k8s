@@ -1,0 +1,63 @@
+{
+    "min_packer_version": "0.12.0",
+    "variables": {
+      "aws_region": "us-gov-west-1",
+      "aws_profile": "some_prbuiofile",
+      "ubuntu_lts_version": "18.04",
+      "ubuntu_lts_name": "bionic",
+      "project_name": "antipode"
+    },
+    "builders": [{
+      "type": "amazon-ebs",
+      "region": "us-gov-west-1",
+      "source_ami_filter": {
+        "filters": {
+          "virtualization-type": "hvm",
+          "name": "ubuntu/images/*ubuntu-{{user `ubuntu_lts_name`}}-{{user `ubuntu_lts_version`}}-amd64-server-*",
+          "root-device-type": "ebs"
+        },
+        "owners": ["513442679011"],
+        "most_recent": true
+      },
+      "instance_type": "t2.micro",
+      "ssh_username": "ubuntu",
+      "ami_name": "{{user `project_name`}}-minikube",
+      "force_deregister": true
+    }],
+    "post-processors": [
+      {
+        "type": "manifest",
+        "output": "minikube-build-artifacts.json",
+        "strip_path": true,
+        "custom_data": {
+          "ami_name": "{{user `project_name`}}-minikube"
+        }
+      }
+    ],
+    "provisioners": [
+      {
+        "type": "shell",
+        "script": "docker_tools_install.sh"
+      },
+      {
+        "type": "shell",
+        "inline": [
+            "curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64",
+            "chmod +x minikube",
+            "sudo mv minikube /usr/local/bin/",
+            "minikube version"
+          ]
+      },
+      {
+        "type": "shell",
+        "inline": [
+            "curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl",
+            "chmod +x kubectl",
+            "sudo mv kubectl /usr/local/bin/",
+            "echo 'source <(kubectl completion bash)' >>~/.bashrc"
+          ]
+      }
+    ]
+}
+
+  
