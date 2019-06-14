@@ -7,7 +7,7 @@
         "ubuntu_lts_version": "18.04",
         "ubuntu_lts_name": "bionic",
         "aws_env_version": "1.0.0",
-        "project_name": "antipode"
+        "project_name": "PROJECT_NAME"
     },
     "builders": [
         {
