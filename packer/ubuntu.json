@@ -20,7 +20,7 @@
       },
       "instance_type": "t2.micro",
       "ssh_username": "ubuntu",
-      "ami_name": "ubuntu-{{user `ubuntu_lts_version`}}-{{timestamp}}"
+      "ami_name": "ubuntu-{{user `ubuntu_lts_version`}}"
     }],
     "post-processors": [
       {

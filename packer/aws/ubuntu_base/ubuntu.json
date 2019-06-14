@@ -4,7 +4,8 @@
       "aws_region": "us-gov-west-1",
       "aws_profile": "some_prbuiofile",
       "ubuntu_lts_version": "18.04",
-      "ubuntu_lts_name": "bionic"
+      "ubuntu_lts_name": "bionic",
+      "project_name": "PROJECT_NAME"
     },
     "builders": [{
       "type": "amazon-ebs",
@@ -20,13 +21,17 @@
       },
       "instance_type": "t2.micro",
       "ssh_username": "ubuntu",
-      "ami_name": "ubuntu-{{user `ubuntu_lts_version`}}-{{timestamp}}"
+      "ami_name": "{{user `project_name`}}-ubuntu-{{user `ubuntu_lts_version`}}",
+      "force_deregister": true
     }],
     "post-processors": [
       {
         "type": "manifest",
         "output": "ubuntu-{{user `ubuntu_lts_version`}}-build-artifacts.json",
-        "strip_path": true
+        "strip_path": true,
+        "custom_data": {
+          "ami_name": "{{user `project_name`}}-ubuntu-{{user `ubuntu_lts_version`}}"
+        }
       }
     ]
 }
