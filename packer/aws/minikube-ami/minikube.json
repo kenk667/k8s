@@ -2,10 +2,10 @@
     "min_packer_version": "0.12.0",
     "variables": {
       "aws_region": "us-gov-west-1",
-      "aws_profile": "some_prbuiofile",
+      "aws_profile": "some_profile",
       "ubuntu_lts_version": "18.04",
       "ubuntu_lts_name": "bionic",
-      "project_name": "antipode"
+      "project_name": "PROJECT_NAME"
     },
     "builders": [{
       "type": "amazon-ebs",
@@ -19,7 +19,7 @@
         "owners": ["513442679011"],
         "most_recent": true
       },
-      "instance_type": "t2.micro",
+      "instance_type": "m3.medium",
       "ssh_username": "ubuntu",
       "ami_name": "{{user `project_name`}}-minikube",
       "force_deregister": true
