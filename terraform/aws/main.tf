@@ -2,6 +2,25 @@ provider "aws" {
   region  = "us-gov-west-1"
   profile = "some_profile"
 }
+
+
+# create an S3 bucket to store the state file in
+# resource "aws_s3_bucket" "terraform-state-storage-s3" {
+#     bucket = var.vpc_name
+ 
+#     versioning {
+#       enabled = true
+#     }
+ 
+#     lifecycle {
+#       prevent_destroy = true
+#     }
+ 
+#     tags {
+#       Name = "S3 Remote Terraform State Store"
+#     }      
+# }
+
 #It's important to have the correct terraform versiosn, all versions at https://releases.hashicorp.com/terraform/
 terraform {
   required_version = ">= 0.12"  

@@ -5,7 +5,7 @@
       "aws_profile": "some_profile",
       "ubuntu_lts_version": "18.04",
       "ubuntu_lts_name": "bionic",
-      "project_name": "PROJECT_NAME"
+      "project_name": "PROJECT_NAME"  //change this
     },
     "builders": [{
       "type": "amazon-ebs",

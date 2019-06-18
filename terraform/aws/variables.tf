@@ -25,3 +25,6 @@ variable "services_octet" {
   default = "10"
 }
 
+variable "minikube_ami_id" {default = "ami-2bbbc04a"} # <= MUST keep this one line so that shell script doesn't break
+
+variable "concourse_ami_id" {default = "ami-33443f52"} # <= MUST keep this one line so that shell script doesn't break

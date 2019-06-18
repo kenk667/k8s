@@ -1,0 +1,16 @@
+{
+  "builds": [
+    {
+      "name": "amazon-ebs",
+      "builder_type": "amazon-ebs",
+      "build_time": 1560545158,
+      "files": null,
+      "artifact_id": "us-gov-west-1:ami-2bbbc04a",
+      "packer_run_uuid": "2f35a90f-cff2-cda9-46d5-15710d897639",
+      "custom_data": {
+        "ami_name": "antipode-minikube"
+      }
+    }
+  ],
+  "last_run_uuid": "2f35a90f-cff2-cda9-46d5-15710d897639"
+}

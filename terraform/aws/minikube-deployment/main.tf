@@ -6,7 +6,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "antipode"
-    key    = "terraform/aws/jump-box/terraform.tfstate"
+    key    = "terraform/aws/minikube/terraform.tfstate"
     region = "us-gov-west-1"
     profile    = "some_profile"
   }
@@ -16,7 +16,7 @@ terraform {
 data "aws_vpcs" "vpc_list" {
   filter {
     name   = "tag-value"
-    values = [var.vpc_name]
+    values = ["${var.vpc_name}-services-vpc"]
   }
 }
 
@@ -36,13 +36,13 @@ data "aws_subnet_ids" "public" {
 # =======================================
 #            SECURITY GROUP
 # =======================================
-resource "aws_security_group" "jumpbox_sg" {
-  name        = "${var.vpc_name}-jumpbox-sg2"
-  description = " Security group for management jumpboxes"
+resource "aws_security_group" "minikube_sg" {
+  name        = "${var.vpc_name}-minikube-sg2"
+  description = " Security group for services-vpc minikube"
   vpc_id      = data.aws_vpc.vpc.id
 
   tags = {
-    Name = "${var.vpc_name}-jumpbox-sg2"
+    Name = "${var.vpc_name}-minikube-sg2"
   }
 }
 
@@ -53,7 +53,7 @@ resource "aws_security_group_rule" "ssh" {
   to_port           = 22
   protocol          = "tcp"
   cidr_blocks       = ["0.0.0.0/0"]
-  security_group_id = aws_security_group.jumpbox_sg.id
+  security_group_id = aws_security_group.minikube_sg.id
 }
 
 resource "aws_security_group_rule" "outbound" {
@@ -63,22 +63,21 @@ resource "aws_security_group_rule" "outbound" {
   to_port           = -1
   protocol          = "all"
   cidr_blocks       = ["0.0.0.0/0"]
-  security_group_id = aws_security_group.jumpbox_sg.id
+  security_group_id = aws_security_group.minikube_sg.id
 }
 
 # =======================================
-#               JUMPBOXES
+#               MINIKUBE
 # =======================================
 
-module "ken_jumpbox" {
-  source = "../../modules/jump_box"
+module "minikube" {
+  source = "../../modules/minikube"
 
- key_name              = "id_rsa" #Change This
+  key_name              = "id_rsa" #Change This
   key_path              = "/home/user/.ssh/" #Change This
   subnet_id             = element(tolist(data.aws_subnet_ids.public.ids), 0)
-  vpc_name                = var.vpc_name
-  operator_name         = "USER_NAME" #Change this
-  bootstrap_script_path = "bootstrap/example.sh"
-  security_group_id     = aws_security_group.jumpbox_sg.id
+  vpc_name              = "${var.vpc_name}-services-vpc"
+  security_group_id     = aws_security_group.minikube_sg.id
+  minikube_ami          = var.minikube_ami_id
 }
 
