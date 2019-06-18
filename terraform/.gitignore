@@ -7,3 +7,4 @@
 .idea/*
 *.pivotal
 om.key
+s3_policy.json
