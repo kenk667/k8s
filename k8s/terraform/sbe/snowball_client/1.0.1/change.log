@@ -1,0 +1,37 @@
+# Change Log
+All notable changes to this project will be documented in this file.
+
+## Jan 2016
+### Added
+- -j flag to stop the copy operation if invalid files are encountered. Defaults to false.
+
+## March 2016
+### Optimization the number of internal threads that were created when uploading data to a Snowball. The some individuals were seeing OutOfMemory exceptions when
+ the system uLimits were not set to unlimited
+
+## April 2016
+### Exit code is being set to a non 0 value when error occurred during a copy operation
+
+## May 2016
+### Quite mode added to suppress file transfer progress, Windows Bug Fix when copying from the root of a drive
+
+## June 2016
+### --verbose flag added to display transfer information for each file.
+
+## July 2016
+### Auth tag error handling.
+
+## Aug 2016
+## Introduced fast resume and --checksum flag. Fixed validate bug.
+
+## Sept 2016
+## New copy command semantics, error log at end of transfer, Glacier support in client using new manifest.
+
+## Aug 2017
+## Added support for Advanced Encryption Standard instruction for the Linux and Mac platforms to increase encryption/transfer speeds
+
+## Nov 2017
+## Added batching of small files to improve the performance when transferring small files.
+
+## March 2018
+## Bug fixes and optimizations when batching small files. Upgraded the version of Java that is bundled with

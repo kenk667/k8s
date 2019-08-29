@@ -1,0 +1,195 @@
+---
+
+apiVersion: kubeadm.k8s.io/v1beta1
+kind: InitConfiguration
+bootstrapTokens:
+- groups:
+  - system:bootstrappers:kubeadm:default-node-token
+  token: 
+  ttl: 0s
+  usages:
+  - signing
+  - authentication
+nodeRegistration:
+  criSocket: /var/run/dockershim.sock
+  kubeletExtraArgs:
+    cloud-provider: aws
+    read-only-port: "10255"
+  name: 
+  taints:
+  - effect: NoSchedule
+    key: node-role.kubernetes.io/master
+---
+
+apiVersion: kubeadm.k8s.io/v1beta1
+kind: ClusterConfiguration
+apiServer:
+  certSANs:
+  - 
+  extraArgs:
+    cloud-provider: aws
+  timeoutForControlPlane: 5m0s
+certificatesDir: /etc/kubernetes/pki
+clusterName: kubernetes
+controllerManager:
+  extraArgs:
+    cloud-provider: aws
+dns:
+  type: CoreDNS
+etcd:
+  local:
+    dataDir: /var/lib/etcd
+imageRepository: k8s.gcr.io
+kubernetesVersion: v1.14.3
+networking:
+  dnsDomain: cluster.local
+  podSubnet: ""
+  serviceSubnet: 10.96.0.0/12
+
+---
+
+apiVersion: kubeadm.k8s.io/v1beta1
+kind: InitConfiguration
+bootstrapTokens:
+- groups:
+  - system:bootstrappers:kubeadm:default-node-token
+  token: 
+  ttl: 0s
+  usages:
+  - signing
+  - authentication
+nodeRegistration:
+  criSocket: /var/run/dockershim.sock
+  kubeletExtraArgs:
+    cloud-provider: aws
+    read-only-port: "10255"
+  name: 
+  taints:
+  - effect: NoSchedule
+    key: node-role.kubernetes.io/master
+---
+
+apiVersion: kubeadm.k8s.io/v1beta1
+kind: ClusterConfiguration
+apiServer:
+  certSANs:
+  - 
+  #- 
+  extraArgs:
+    cloud-provider: aws
+  timeoutForControlPlane: 5m0s
+certificatesDir: /etc/kubernetes/pki
+clusterName: kubernetes
+controllerManager:
+  extraArgs:
+    cloud-provider: aws
+dns:
+  type: CoreDNS
+etcd:
+  local:
+    dataDir: /var/lib/etcd
+imageRepository: k8s.gcr.io
+kubernetesVersion: v1.14.3
+networking:
+  dnsDomain: cluster.local
+  podSubnet: ""
+  serviceSubnet: 10.96.0.0/12
+
+---
+
+apiVersion: kubeadm.k8s.io/v1beta1
+kind: InitConfiguration
+bootstrapTokens:
+- groups:
+  - system:bootstrappers:kubeadm:default-node-token
+  token: 
+  ttl: 0s
+  usages:
+  - signing
+  - authentication
+nodeRegistration:
+  criSocket: /var/run/dockershim.sock
+  kubeletExtraArgs:
+    cloud-provider: aws
+    read-only-port: "10255"
+  name: 
+  taints:
+  - effect: NoSchedule
+    key: node-role.kubernetes.io/master
+---
+
+apiVersion: kubeadm.k8s.io/v1beta1
+kind: ClusterConfiguration
+apiServer:
+  certSANs:
+  - 
+  #- 
+  extraArgs:
+    cloud-provider: aws
+  timeoutForControlPlane: 5m0s
+certificatesDir: /etc/kubernetes/pki
+clusterName: kubernetes
+controllerManager:
+  extraArgs:
+    cloud-provider: aws
+dns:
+  type: CoreDNS
+etcd:
+  local:
+    dataDir: /var/lib/etcd
+imageRepository: k8s.gcr.io
+kubernetesVersion: v1.14.3
+networking:
+  dnsDomain: cluster.local
+  podSubnet: ""
+  serviceSubnet: 10.96.0.0/12
+
+---
+
+apiVersion: kubeadm.k8s.io/v1beta1
+kind: InitConfiguration
+bootstrapTokens:
+- groups:
+  - system:bootstrappers:kubeadm:default-node-token
+  token: 
+  ttl: 0s
+  usages:
+  - signing
+  - authentication
+nodeRegistration:
+  criSocket: /var/run/dockershim.sock
+  kubeletExtraArgs:
+    cloud-provider: aws
+    read-only-port: "10255"
+  name: 
+  taints:
+  - effect: NoSchedule
+    key: node-role.kubernetes.io/master
+---
+
+apiVersion: kubeadm.k8s.io/v1beta1
+kind: ClusterConfiguration
+apiServer:
+  certSANs:
+  - 
+  #- 
+  extraArgs:
+    cloud-provider: aws
+  timeoutForControlPlane: 5m0s
+certificatesDir: /etc/kubernetes/pki
+clusterName: kubernetes
+controllerManager:
+  extraArgs:
+    cloud-provider: aws
+dns:
+  type: CoreDNS
+etcd:
+  local:
+    dataDir: /var/lib/etcd
+imageRepository: k8s.gcr.io
+kubernetesVersion: v1.14.3
+networking:
+  dnsDomain: cluster.local
+  podSubnet: ""
+  serviceSubnet: 10.96.0.0/12
+

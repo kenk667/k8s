@@ -1,0 +1,39 @@
+{
+    "min_packer_version": "0.12.0",
+    "variables": {
+      "aws_region": "us-gov-west-1",
+      "aws_profile": "some_profile",
+      "ubuntu_lts_version": "18.04",
+      "ubuntu_lts_name": "bionic",
+      "project_name": "antipode"
+    },
+    "builders": [{
+      "type": "amazon-ebs",
+      "region": "us-gov-west-1",
+      "source_ami_filter": {
+        "filters": {
+          "virtualization-type": "hvm",
+          "name": "ubuntu/images/*ubuntu-{{user `ubuntu_lts_name`}}-{{user `ubuntu_lts_version`}}-amd64-server-*",
+          "root-device-type": "ebs"
+        },
+        "owners": ["513442679011"],
+        "most_recent": true
+      },
+      "instance_type": "t2.micro",
+      "ssh_username": "ubuntu",
+      "ami_name": "{{user `project_name`}}-ubuntu-{{user `ubuntu_lts_version`}}",
+      "force_deregister": true
+    }],
+    "post-processors": [
+      {
+        "type": "manifest",
+        "output": "ubuntu-{{user `ubuntu_lts_version`}}-build-artifacts.json",
+        "strip_path": true,
+        "custom_data": {
+          "ami_name": "{{user `project_name`}}-ubuntu-{{user `ubuntu_lts_version`}}"
+        }
+      }
+    ]
+}
+
+  

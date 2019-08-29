@@ -1,0 +1,16 @@
+{
+  "builds": [
+    {
+      "name": "amazon-ebs",
+      "builder_type": "amazon-ebs",
+      "build_time": 1565099348,
+      "files": null,
+      "artifact_id": "us-gov-west-1:ami-81a7e5e0",
+      "packer_run_uuid": "f4a22440-e300-240e-9de3-85bcc9016a7b",
+      "custom_data": {
+        "ami_name": "antipode-rancher"
+      }
+    }
+  ],
+  "last_run_uuid": "f4a22440-e300-240e-9de3-85bcc9016a7b"
+}

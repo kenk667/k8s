@@ -1,0 +1,18 @@
+FROM buildpack-deps:bionic-curl AS build
+
+Run apt-get update \
+    && apt-get install -y --no-install-recommends \
+        git \
+        libc6 \
+        openssh-client \
+        unzip \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /terraform
+
+RUN mkdir -p $HOME/.ssh && echo "StrictHostKeyChecking no" >> $HOME/.ssh/config && echo "LogLevel quiet" >> $HOME/.ssh/config && chmod 0600 $HOME/.ssh/config
+RUN wget -O /usr/local/bin/terraform-provider-stateful_v1.1.0-linux-amd64 \
+  "https://github.com/ashald/terraform-provider-stateful/releases/download/v1.1.0/terraform-provider-stateful_v1.1.0-linux-amd64" && \
+  chmod +x /usr/local/bin/terraform-provider-stateful_v1.1.0-linux-amd64
+COPY install.sh /terraform
+RUN chmod 777 install.sh && ./install.sh

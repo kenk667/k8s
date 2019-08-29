@@ -1,0 +1,16 @@
+{
+  "builds": [
+    {
+      "name": "amazon-ebs",
+      "builder_type": "amazon-ebs",
+      "build_time": 1563901042,
+      "files": null,
+      "artifact_id": "us-gov-west-1:ami-e8fabb89",
+      "packer_run_uuid": "9b02999b-1983-e2b2-0384-e8da5bb3efb3",
+      "custom_data": {
+        "ami_name": "sbe-ubuntu-16.04"
+      }
+    }
+  ],
+  "last_run_uuid": "9b02999b-1983-e2b2-0384-e8da5bb3efb3"
+}

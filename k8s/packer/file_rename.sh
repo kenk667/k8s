@@ -1,0 +1,1 @@
+rename -e 's/pattern1/pattern2/g' *

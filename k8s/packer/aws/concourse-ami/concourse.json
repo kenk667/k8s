@@ -1,0 +1,95 @@
+{
+    "variables": {
+        "aws_region": "us-gov-west-1",
+        "aws_profile": "some_profile",
+        "concourse_version": "5.3.0",
+        "lifecycled_version": "3.0.2",
+        "ubuntu_lts_version": "18.04",
+        "ubuntu_lts_name": "bionic",
+        "aws_env_version": "1.0.0",
+        "project_name": "antipode"
+    },
+    "builders": [
+        {
+            "type": "amazon-ebs",
+            "region": "us-gov-west-1",
+            "source_ami_filter": {
+                "filters": {
+                    "virtualization-type": "hvm",
+                    "name": "ubuntu/images/*ubuntu-{{user `ubuntu_lts_name`}}-{{user `ubuntu_lts_version`}}-amd64-server-*",
+                    "root-device-type": "ebs"
+                },
+                "owners": [
+                    "513442679011"
+                ],
+                "most_recent": true
+            },
+            "instance_type": "m3.medium",
+            "ssh_username": "ubuntu",
+            "ami_name": "{{user `project_name`}}-concourse-{{user `concourse_version`}}",
+            "force_deregister": true,
+            "tags": {
+                "source_ami": "{{ .SourceAMI }}",
+                "template_version": "{{user `template_version`}}",
+                "concourse_version": "{{user `concourse_version`}}",
+                "lifecycled_version": "{{user `lifecycled_version`}}",
+                "aws_env_version": "{{user `aws_env_version`}}"
+            }
+        }
+    ],
+    "post-processors": [
+        {
+            "type": "manifest",
+            "output": "concourse-build-artifacts.json",
+            "strip_path": true,
+            "custom_data": {
+                "ami_name": "{{user `project_name`}}-concourse-{{user `concourse_version`}}"
+              }
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "inline": [
+                "sleep 30",
+                "sudo apt-get upgrade -y"
+            ]
+        },
+        {
+            "type": "shell",
+            "inline": [
+                "curl -L https://github.com/concourse/concourse/releases/download/v{{user `concourse_version`}}/concourse-{{user `concourse_version`}}-linux-amd64.tgz -o /tmp/concourse-linux-amd64.tgz",
+                "sudo tar -xvzf /tmp/concourse-linux-amd64.tgz -C /usr/local"
+            ]
+        },
+        {
+            "type": "shell",
+            "inline": [
+                "curl -L https://github.com/buildkite/lifecycled/releases/download/v{{user `lifecycled_version`}}/lifecycled-linux-amd64 -o lifecycled",
+                "sudo chmod +x lifecycled",
+                "sudo chown root:root lifecycled",
+                "sudo mv lifecycled /usr/local/bin/lifecycled"
+            ]
+        },
+        {
+            "type": "shell",
+            "inline": [
+                "curl -L https://github.com/telia-oss/aws-env/releases/download/v{{user `aws_env_version`}}/aws-env-linux-amd64 -o aws-env",
+                "sudo chmod +x aws-env",
+                "sudo chown root:root aws-env",
+                "sudo mv aws-env /usr/local/bin/aws-env"
+            ]
+        },
+        {
+            "type": "shell",
+            "inline": [
+                "curl -L https://github.com/prometheus/node_exporter/releases/download/v0.16.0/node_exporter-0.16.0.linux-amd64.tar.gz -o node_exporter.tar.gz",
+                "tar xvzf node_exporter.tar.gz --wildcards --strip=1 */node_exporter",
+                "rm node_exporter.tar.gz",
+                "sudo chmod +x node_exporter",
+                "sudo chown root:root node_exporter",
+                "sudo mv node_exporter /usr/local/bin/node_exporter"
+            ]
+        }
+    ]
+}

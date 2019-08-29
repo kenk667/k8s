@@ -1,0 +1,11 @@
+    "provisioners": [
+      {
+        "type": "file",
+        "source": "../../../../../../../../ssh_pub/antipode.pub",
+        "destination": "home/ubuntu/.ssh/"
+      },
+      {
+        "type": "shell",
+        "inline": ["chmod 700 /home/ubuntu/.ssh/antipode.pub"]
+      }
+    ],

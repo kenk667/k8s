@@ -1,0 +1,1465 @@
+2019/06/19 14:41:36 [INFO] Terraform version: 0.12.1  
+2019/06/19 14:41:36 [INFO] Go runtime version: go1.12.4
+2019/06/19 14:41:36 [INFO] CLI args: []string{"/usr/local/bin/terraform", "validate"}
+2019/06/19 14:41:36 [DEBUG] Attempting to open CLI config file: /home/meow/.terraformrc
+2019/06/19 14:41:36 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2019/06/19 14:41:36 [INFO] CLI command args: []string{"validate"}
+2019/06/19 14:41:36 [DEBUG] checking for provider in "."
+2019/06/19 14:41:36 [DEBUG] checking for provider in "/usr/local/bin"
+2019/06/19 14:41:36 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
+2019/06/19 14:41:36 [DEBUG] found provider "terraform-provider-aws_v2.15.0_x4"
+2019/06/19 14:41:36 [DEBUG] found provider "terraform-provider-random_v2.1.2_x4"
+2019/06/19 14:41:36 [DEBUG] found provider "terraform-provider-template_v2.1.2_x4"
+2019/06/19 14:41:36 [DEBUG] found valid plugin: "aws", "2.15.0", "/home/meow/kessel/mad_hatter/edge_computing/automation/k8s/terraform/aws/minikube-deployment/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.15.0_x4"
+2019/06/19 14:41:36 [DEBUG] found valid plugin: "random", "2.1.2", "/home/meow/kessel/mad_hatter/edge_computing/automation/k8s/terraform/aws/minikube-deployment/.terraform/plugins/linux_amd64/terraform-provider-random_v2.1.2_x4"
+2019/06/19 14:41:36 [DEBUG] found valid plugin: "template", "2.1.2", "/home/meow/kessel/mad_hatter/edge_computing/automation/k8s/terraform/aws/minikube-deployment/.terraform/plugins/linux_amd64/terraform-provider-template_v2.1.2_x4"
+2019/06/19 14:41:36 [DEBUG] checking for provisioner in "."
+2019/06/19 14:41:36 [DEBUG] checking for provisioner in "/usr/local/bin"
+2019/06/19 14:41:36 [DEBUG] checking for provisioner in ".terraform/plugins/linux_amd64"
+2019/06/19 14:41:36 [TRACE] terraform.NewContext: starting
+2019/06/19 14:41:36 [TRACE] terraform.NewContext: resolving provider version selections
+2019/06/19 14:41:37 [TRACE] terraform.NewContext: loading provider schemas
+2019/06/19 14:41:37 [TRACE] LoadSchemas: retrieving schema for provider type "aws"
+2019-06-19T14:41:37.330-0400 [INFO]  plugin: configuring client automatic mTLS
+2019-06-19T14:41:37.367-0400 [DEBUG] plugin: starting plugin: path=/home/meow/kessel/mad_hatter/edge_computing/automation/k8s/terraform/aws/minikube-deployment/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.15.0_x4 args=[/home/meow/kessel/mad_hatter/edge_computing/automation/k8s/terraform/aws/minikube-deployment/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.15.0_x4]
+2019-06-19T14:41:37.367-0400 [DEBUG] plugin: plugin started: path=/home/meow/kessel/mad_hatter/edge_computing/automation/k8s/terraform/aws/minikube-deployment/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.15.0_x4 pid=21935
+2019-06-19T14:41:37.367-0400 [DEBUG] plugin: waiting for RPC address: path=/home/meow/kessel/mad_hatter/edge_computing/automation/k8s/terraform/aws/minikube-deployment/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.15.0_x4
+2019-06-19T14:41:37.384-0400 [INFO]  plugin.terraform-provider-aws_v2.15.0_x4: configuring server automatic mTLS: timestamp=2019-06-19T14:41:37.384-0400
+2019-06-19T14:41:37.450-0400 [DEBUG] plugin.terraform-provider-aws_v2.15.0_x4: plugin address: network=unix address=/tmp/plugin887961345 timestamp=2019-06-19T14:41:37.449-0400
+2019-06-19T14:41:37.450-0400 [DEBUG] plugin: using plugin: version=5
+2019/06/19 14:41:37 [TRACE] GRPCProvider: GetSchema
+2019/06/19 14:41:37 [TRACE] GRPCProvider: Close
+2019-06-19T14:41:37.777-0400 [DEBUG] plugin: plugin process exited: path=/home/meow/kessel/mad_hatter/edge_computing/automation/k8s/terraform/aws/minikube-deployment/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.15.0_x4 pid=21935
+2019-06-19T14:41:37.777-0400 [DEBUG] plugin: plugin exited
+2019/06/19 14:41:37 [TRACE] LoadSchemas: retrieving schema for provisioner "remote-exec"
+2019-06-19T14:41:37.777-0400 [DEBUG] plugin: starting plugin: path=/usr/local/bin/terraform args=[/usr/local/bin/terraform, internal-plugin, provisioner, remote-exec]
+2019-06-19T14:41:37.778-0400 [DEBUG] plugin: plugin started: path=/usr/local/bin/terraform pid=21955
+2019-06-19T14:41:37.778-0400 [DEBUG] plugin: waiting for RPC address: path=/usr/local/bin/terraform
+2019-06-19T14:41:37.801-0400 [DEBUG] plugin.terraform: 2019/06/19 14:41:37 [INFO] Terraform version: 0.12.1  
+2019-06-19T14:41:37.801-0400 [DEBUG] plugin.terraform: 2019/06/19 14:41:37 [INFO] Go runtime version: go1.12.4
+2019-06-19T14:41:37.801-0400 [DEBUG] plugin.terraform: 2019/06/19 14:41:37 [INFO] CLI args: []string{"/usr/local/bin/terraform", "internal-plugin", "provisioner", "remote-exec"}
+2019-06-19T14:41:37.801-0400 [DEBUG] plugin.terraform: 2019/06/19 14:41:37 [DEBUG] Attempting to open CLI config file: /home/meow/.terraformrc
+2019-06-19T14:41:37.801-0400 [DEBUG] plugin.terraform: 2019/06/19 14:41:37 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2019-06-19T14:41:37.803-0400 [DEBUG] plugin.terraform: 2019/06/19 14:41:37 [INFO] CLI command args: []string{"internal-plugin", "provisioner", "remote-exec"}
+2019-06-19T14:41:37.804-0400 [DEBUG] plugin.terraform: remote-exec-provisioner (internal) 2019/06/19 14:41:37 [INFO] Starting provisioner plugin remote-exec
+2019-06-19T14:41:37.805-0400 [DEBUG] plugin.terraform: plugin address: address=/tmp/plugin236921949 network=unix timestamp=2019-06-19T14:41:37.804-0400
+2019-06-19T14:41:37.805-0400 [DEBUG] plugin: using plugin: version=5
+2019-06-19T14:41:37.812-0400 [DEBUG] plugin: plugin process exited: path=/usr/local/bin/terraform pid=21955
+2019-06-19T14:41:37.812-0400 [DEBUG] plugin: plugin exited
+2019/06/19 14:41:37 [TRACE] terraform.NewContext: complete
+2019/06/19 14:41:37 [INFO] terraform: building graph: GraphTypeValidate
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2019/06/19 14:41:37 [TRACE] ConfigTransformer: Starting for path: 
+2019/06/19 14:41:37 [TRACE] ConfigTransformer: Starting for path: minikube
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+aws_security_group_rule.api - *terraform.NodeValidatableResource
+aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+data.aws_vpc.vpc - *terraform.NodeValidatableResource
+data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+------
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.LocalTransformer
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.OutputTransformer
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+aws_security_group_rule.api - *terraform.NodeValidatableResource
+aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+data.aws_vpc.vpc - *terraform.NodeValidatableResource
+data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+module.minikube.output.eip - *terraform.NodeApplyableOutput
+module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+output.minikube_info - *terraform.NodeApplyableOutput
+------
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.StateTransformer
+2019/06/19 14:41:37 [TRACE] StateTransformer: state is empty, so nothing to do
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2019/06/19 14:41:37 [TRACE] AttachResourceConfigTransformer: attaching to "aws_security_group_rule.dashboard" (*terraform.NodeValidatableResource) config from main.tf:69,1-47
+2019/06/19 14:41:37 [TRACE] AttachResourceConfigTransformer: attaching to "aws_security_group.minikube_sg" (*terraform.NodeValidatableResource) config from main.tf:39,1-44
+2019/06/19 14:41:37 [TRACE] AttachResourceConfigTransformer: attaching to "aws_security_group_rule.api" (*terraform.NodeValidatableResource) config from main.tf:59,1-41
+2019/06/19 14:41:37 [TRACE] AttachResourceConfigTransformer: attaching to "aws_security_group_rule.ssh" (*terraform.NodeValidatableResource) config from main.tf:49,1-41
+2019/06/19 14:41:37 [TRACE] AttachResourceConfigTransformer: attaching to "module.minikube.aws_instance.minikube" (*terraform.NodeValidatableResource) config from ../../modules/minikube/main.tf:6,1-35
+2019/06/19 14:41:37 [TRACE] AttachResourceConfigTransformer: attaching to "data.aws_vpc.vpc" (*terraform.NodeValidatableResource) config from hcl.Range{Filename:"main.tf", Start:hcl.Pos{Line:25, Column:1, Byte:686}, End:hcl.Pos{Line:25, Column:21, Byte:706}}
+2019/06/19 14:41:37 [TRACE] AttachResourceConfigTransformer: attaching to "module.minikube.aws_eip.eip" (*terraform.NodeValidatableResource) config from ../../modules/minikube/main.tf:67,1-25
+2019/06/19 14:41:37 [TRACE] AttachResourceConfigTransformer: attaching to "data.aws_subnet_ids.public" (*terraform.NodeValidatableResource) config from hcl.Range{Filename:"main.tf", Start:hcl.Pos{Line:29, Column:1, Byte:760}, End:hcl.Pos{Line:29, Column:31, Byte:790}}
+2019/06/19 14:41:37 [TRACE] AttachResourceConfigTransformer: attaching to "aws_security_group_rule.outbound" (*terraform.NodeValidatableResource) config from main.tf:79,1-46
+2019/06/19 14:41:37 [TRACE] AttachResourceConfigTransformer: attaching to "data.aws_vpcs.vpc_list" (*terraform.NodeValidatableResource) config from hcl.Range{Filename:"main.tf", Start:hcl.Pos{Line:16, Column:1, Byte:361}, End:hcl.Pos{Line:16, Column:27, Byte:387}}
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+aws_security_group_rule.api - *terraform.NodeValidatableResource
+aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+data.aws_vpc.vpc - *terraform.NodeValidatableResource
+data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+module.minikube.output.eip - *terraform.NodeApplyableOutput
+module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+output.minikube_info - *terraform.NodeApplyableOutput
+var.aws_region - *terraform.NodeRootVariable
+var.minikube_ami_id - *terraform.NodeRootVariable
+var.vpc_name - *terraform.NodeRootVariable
+------
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2019/06/19 14:41:37 [TRACE] MissingProviderTransformer: added implicit provisioner module.minikube.remote-exec, first implied by module.minikube.aws_instance.minikube
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer with new graph:
+aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+aws_security_group_rule.api - *terraform.NodeValidatableResource
+aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+data.aws_vpc.vpc - *terraform.NodeValidatableResource
+data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+module.minikube.output.eip - *terraform.NodeApplyableOutput
+module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+output.minikube_info - *terraform.NodeApplyableOutput
+var.aws_region - *terraform.NodeRootVariable
+var.minikube_ami_id - *terraform.NodeRootVariable
+var.vpc_name - *terraform.NodeRootVariable
+------
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2019/06/19 14:41:37 [TRACE] ProvisionerTransformer: module.minikube.aws_instance.minikube is provisioned by module.minikube.remote-exec ("module.minikube.provisioner.remote-exec")
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.ProvisionerTransformer with new graph:
+aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+aws_security_group_rule.api - *terraform.NodeValidatableResource
+aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+data.aws_vpc.vpc - *terraform.NodeValidatableResource
+data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+module.minikube.output.eip - *terraform.NodeApplyableOutput
+module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+output.minikube_info - *terraform.NodeApplyableOutput
+var.aws_region - *terraform.NodeRootVariable
+var.minikube_ami_id - *terraform.NodeRootVariable
+var.vpc_name - *terraform.NodeRootVariable
+------
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer with new graph:
+aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+aws_security_group_rule.api - *terraform.NodeValidatableResource
+aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+data.aws_vpc.vpc - *terraform.NodeValidatableResource
+data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+module.minikube.output.eip - *terraform.NodeApplyableOutput
+module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+output.minikube_info - *terraform.NodeApplyableOutput
+var.aws_region - *terraform.NodeRootVariable
+var.minikube_ami_id - *terraform.NodeRootVariable
+var.vpc_name - *terraform.NodeRootVariable
+------
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2019/06/19 14:41:37 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2019/06/19 14:41:37 [TRACE] ProviderConfigTransformer: attaching to "provider.aws" provider configuration from main.tf:1,1-15
+2019/06/19 14:41:37 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+aws_security_group_rule.api - *terraform.NodeValidatableResource
+aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+data.aws_vpc.vpc - *terraform.NodeValidatableResource
+data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+module.minikube.output.eip - *terraform.NodeApplyableOutput
+module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+output.minikube_info - *terraform.NodeApplyableOutput
+provider.aws - *terraform.NodeApplyableProvider
+var.aws_region - *terraform.NodeRootVariable
+var.minikube_ami_id - *terraform.NodeRootVariable
+var.vpc_name - *terraform.NodeRootVariable
+------
+2019/06/19 14:41:37 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2019/06/19 14:41:37 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2019/06/19 14:41:37 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: aws_security_group.minikube_sg is provided by provider.aws or inherited equivalent
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: aws_security_group_rule.dashboard is provided by provider.aws or inherited equivalent
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: aws_security_group_rule.ssh is provided by provider.aws or inherited equivalent
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: module.minikube.aws_instance.minikube is provided by module.minikube.provider.aws or inherited equivalent
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: data.aws_vpc.vpc is provided by provider.aws or inherited equivalent
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: module.minikube.aws_eip.eip is provided by module.minikube.provider.aws or inherited equivalent
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: aws_security_group_rule.outbound is provided by provider.aws or inherited equivalent
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: data.aws_vpcs.vpc_list is provided by provider.aws or inherited equivalent
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: aws_security_group_rule.api is provided by provider.aws or inherited equivalent
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: data.aws_subnet_ids.public is provided by provider.aws or inherited equivalent
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: exact match for provider.aws serving aws_security_group_rule.ssh
+2019/06/19 14:41:37 [DEBUG] ProviderTransformer: "aws_security_group_rule.ssh" (*terraform.NodeValidatableResource) needs provider.aws
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: module.minikube.aws_eip.eip uses inherited configuration provider.aws
+2019/06/19 14:41:37 [DEBUG] ProviderTransformer: "module.minikube.aws_eip.eip" (*terraform.NodeValidatableResource) needs provider.aws
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: exact match for provider.aws serving aws_security_group_rule.outbound
+2019/06/19 14:41:37 [DEBUG] ProviderTransformer: "aws_security_group_rule.outbound" (*terraform.NodeValidatableResource) needs provider.aws
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: exact match for provider.aws serving data.aws_subnet_ids.public
+2019/06/19 14:41:37 [DEBUG] ProviderTransformer: "data.aws_subnet_ids.public" (*terraform.NodeValidatableResource) needs provider.aws
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: exact match for provider.aws serving aws_security_group.minikube_sg
+2019/06/19 14:41:37 [DEBUG] ProviderTransformer: "aws_security_group.minikube_sg" (*terraform.NodeValidatableResource) needs provider.aws
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: exact match for provider.aws serving aws_security_group_rule.dashboard
+2019/06/19 14:41:37 [DEBUG] ProviderTransformer: "aws_security_group_rule.dashboard" (*terraform.NodeValidatableResource) needs provider.aws
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: module.minikube.aws_instance.minikube uses inherited configuration provider.aws
+2019/06/19 14:41:37 [DEBUG] ProviderTransformer: "module.minikube.aws_instance.minikube" (*terraform.NodeValidatableResource) needs provider.aws
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: exact match for provider.aws serving data.aws_vpc.vpc
+2019/06/19 14:41:37 [DEBUG] ProviderTransformer: "data.aws_vpc.vpc" (*terraform.NodeValidatableResource) needs provider.aws
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: exact match for provider.aws serving data.aws_vpcs.vpc_list
+2019/06/19 14:41:37 [DEBUG] ProviderTransformer: "data.aws_vpcs.vpc_list" (*terraform.NodeValidatableResource) needs provider.aws
+2019/06/19 14:41:37 [TRACE] ProviderTransformer: exact match for provider.aws serving aws_security_group_rule.api
+2019/06/19 14:41:37 [DEBUG] ProviderTransformer: "aws_security_group_rule.api" (*terraform.NodeValidatableResource) needs provider.aws
+2019/06/19 14:41:37 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.api - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+  provider.aws - *terraform.NodeApplyableProvider
+module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+module.minikube.output.eip - *terraform.NodeApplyableOutput
+module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+output.minikube_info - *terraform.NodeApplyableOutput
+provider.aws - *terraform.NodeApplyableProvider
+var.aws_region - *terraform.NodeRootVariable
+var.minikube_ami_id - *terraform.NodeRootVariable
+var.vpc_name - *terraform.NodeRootVariable
+------
+2019/06/19 14:41:37 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2019/06/19 14:41:37 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2019/06/19 14:41:37 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2019/06/19 14:41:37 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.api - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+  provider.aws - *terraform.NodeApplyableProvider
+module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+module.minikube.output.eip - *terraform.NodeApplyableOutput
+module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+output.minikube_info - *terraform.NodeApplyableOutput
+provider.aws - *terraform.NodeApplyableProvider
+var.aws_region - *terraform.NodeRootVariable
+var.minikube_ami_id - *terraform.NodeRootVariable
+var.vpc_name - *terraform.NodeRootVariable
+------
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2019/06/19 14:41:37 [TRACE] AttachSchemaTransformer: attaching resource schema to data.aws_vpc.vpc
+2019/06/19 14:41:37 [TRACE] AttachSchemaTransformer: attaching resource schema to module.minikube.aws_eip.eip
+2019/06/19 14:41:37 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_security_group_rule.outbound
+2019/06/19 14:41:37 [TRACE] AttachSchemaTransformer: attaching resource schema to data.aws_vpcs.vpc_list
+2019/06/19 14:41:37 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_security_group_rule.api
+2019/06/19 14:41:37 [TRACE] AttachSchemaTransformer: attaching resource schema to data.aws_subnet_ids.public
+2019/06/19 14:41:37 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_security_group.minikube_sg
+2019/06/19 14:41:37 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_security_group_rule.dashboard
+2019/06/19 14:41:37 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.aws
+2019/06/19 14:41:37 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_security_group_rule.ssh
+2019/06/19 14:41:37 [TRACE] AttachSchemaTransformer: attaching resource schema to module.minikube.aws_instance.minikube
+2019/06/19 14:41:37 [TRACE] AttachSchemaTransformer: attaching provisioner "remote-exec" config schema to module.minikube.aws_instance.minikube
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "aws_security_group.minikube_sg" references: [var.vpc_name var.vpc_name data.aws_vpc.vpc]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "aws_security_group_rule.dashboard" references: [aws_security_group.minikube_sg]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.output.instance_vpc_security_group_ids" references: [module.minikube.aws_instance.minikube]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "provider.aws" references: [var.aws_region]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "aws_security_group_rule.ssh" references: [aws_security_group.minikube_sg]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.aws_instance.minikube" references: [module.minikube.var.subnet_id module.minikube.var.security_group_id module.minikube.var.key_name module.minikube.var.vpc_name module.minikube.var.minikube_ami module.minikube.var.key_path]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.output.ami_id" references: [module.minikube.var.minikube_ami]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.var.key_name" references: []
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.var.subnet_id" references: [data.aws_subnet_ids.public]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.var.security_group_id" references: [aws_security_group.minikube_sg]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.var.minikube_ami" references: [var.minikube_ami_id]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "data.aws_vpc.vpc" references: [data.aws_vpcs.vpc_list]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.aws_eip.eip" references: [module.minikube.var.vpc_name module.minikube.aws_instance.minikube]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.output.instance_public_dns" references: [module.minikube.aws_instance.minikube]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "var.aws_region" references: []
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.var.vpc_name" references: [var.vpc_name]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "aws_security_group_rule.outbound" references: [aws_security_group.minikube_sg]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "data.aws_vpcs.vpc_list" references: [var.vpc_name]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.output.kubeadm_token" references: []
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.output.eip_public_dns" references: [module.minikube.aws_eip.eip]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.var.key_path" references: []
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "aws_security_group_rule.api" references: [aws_security_group.minikube_sg]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.output.instance_arn" references: [module.minikube.aws_instance.minikube]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "var.minikube_ami_id" references: []
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.output.instance_az" references: [module.minikube.aws_instance.minikube]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.output.instance_id" references: [module.minikube.aws_instance.minikube]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.output.instance_name" references: [module.minikube.aws_instance.minikube]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "output.minikube_info" references: [module.minikube.output.instance_vpc_security_group_ids module.minikube.aws_instance.minikube module.minikube.aws_instance.minikube module.minikube.output.ami_id module.minikube.var.key_name module.minikube.var.key_name module.minikube.var.subnet_id module.minikube.var.subnet_id module.minikube.var.security_group_id module.minikube.var.security_group_id module.minikube.var.minikube_ami module.minikube.var.minikube_ami module.minikube.aws_eip.eip module.minikube.aws_eip.eip module.minikube.output.instance_public_dns module.minikube.var.vpc_name module.minikube.var.vpc_name module.minikube.output.kubeadm_token module.minikube.output.eip_public_dns module.minikube.var.key_path module.minikube.var.key_path module.minikube.output.instance_arn module.minikube.output.instance_az module.minikube.output.instance_id module.minikube.output.instance_name module.minikube.output.eip module.minikube.output.instance_subnet_id module.minikube.output.instance_security_groups]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.provisioner.remote-exec" references: []
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "data.aws_subnet_ids.public" references: [data.aws_vpc.vpc]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.output.eip" references: [module.minikube.aws_eip.eip]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.output.instance_subnet_id" references: [module.minikube.aws_instance.minikube]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "module.minikube.output.instance_security_groups" references: [module.minikube.aws_instance.minikube]
+2019/06/19 14:41:37 [DEBUG] ReferenceTransformer: "var.vpc_name" references: []
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+  var.vpc_name - *terraform.NodeRootVariable
+aws_security_group_rule.api - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+  data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+  var.vpc_name - *terraform.NodeRootVariable
+module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  provider.aws - *terraform.NodeApplyableProvider
+module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+  module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  provider.aws - *terraform.NodeApplyableProvider
+module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+module.minikube.output.eip - *terraform.NodeApplyableOutput
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  var.minikube_ami_id - *terraform.NodeRootVariable
+module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  var.vpc_name - *terraform.NodeRootVariable
+output.minikube_info - *terraform.NodeApplyableOutput
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+  module.minikube.output.eip - *terraform.NodeApplyableOutput
+  module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+  module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+  module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+provider.aws - *terraform.NodeApplyableProvider
+  var.aws_region - *terraform.NodeRootVariable
+var.aws_region - *terraform.NodeRootVariable
+var.minikube_ami_id - *terraform.NodeRootVariable
+var.vpc_name - *terraform.NodeRootVariable
+------
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+  var.vpc_name - *terraform.NodeRootVariable
+aws_security_group_rule.api - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+  data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+  var.vpc_name - *terraform.NodeRootVariable
+meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  aws_security_group_rule.api - *terraform.NodeValidatableResource
+  aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+  aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+  aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+  data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+  data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+  module.minikube.output.eip - *terraform.NodeApplyableOutput
+  module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+  module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+  module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+  module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  output.minikube_info - *terraform.NodeApplyableOutput
+  provider.aws - *terraform.NodeApplyableProvider
+  var.aws_region - *terraform.NodeRootVariable
+  var.minikube_ami_id - *terraform.NodeRootVariable
+  var.vpc_name - *terraform.NodeRootVariable
+module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  provider.aws - *terraform.NodeApplyableProvider
+module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+  module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  provider.aws - *terraform.NodeApplyableProvider
+module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+module.minikube.output.eip - *terraform.NodeApplyableOutput
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  var.minikube_ami_id - *terraform.NodeRootVariable
+module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  var.vpc_name - *terraform.NodeRootVariable
+output.minikube_info - *terraform.NodeApplyableOutput
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+  module.minikube.output.eip - *terraform.NodeApplyableOutput
+  module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+  module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+  module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+provider.aws - *terraform.NodeApplyableProvider
+  var.aws_region - *terraform.NodeRootVariable
+var.aws_region - *terraform.NodeRootVariable
+var.minikube_ami_id - *terraform.NodeRootVariable
+var.vpc_name - *terraform.NodeRootVariable
+------
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+  var.vpc_name - *terraform.NodeRootVariable
+aws_security_group_rule.api - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+  data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+  var.vpc_name - *terraform.NodeRootVariable
+meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  aws_security_group_rule.api - *terraform.NodeValidatableResource
+  aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+  aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+  aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+  data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+  data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+  module.minikube.output.eip - *terraform.NodeApplyableOutput
+  module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+  module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+  module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+  module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  output.minikube_info - *terraform.NodeApplyableOutput
+  provider.aws - *terraform.NodeApplyableProvider
+  var.aws_region - *terraform.NodeRootVariable
+  var.minikube_ami_id - *terraform.NodeRootVariable
+  var.vpc_name - *terraform.NodeRootVariable
+module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  provider.aws - *terraform.NodeApplyableProvider
+module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+  module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  provider.aws - *terraform.NodeApplyableProvider
+module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+module.minikube.output.eip - *terraform.NodeApplyableOutput
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  var.minikube_ami_id - *terraform.NodeRootVariable
+module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  var.vpc_name - *terraform.NodeRootVariable
+output.minikube_info - *terraform.NodeApplyableOutput
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+  module.minikube.output.eip - *terraform.NodeApplyableOutput
+  module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+  module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+  module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+provider.aws - *terraform.NodeApplyableProvider
+  var.aws_region - *terraform.NodeRootVariable
+provider.aws (close) - *terraform.graphNodeCloseProvider
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  aws_security_group_rule.api - *terraform.NodeValidatableResource
+  aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+  aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+  aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+  data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+  data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+var.aws_region - *terraform.NodeRootVariable
+var.minikube_ami_id - *terraform.NodeRootVariable
+var.vpc_name - *terraform.NodeRootVariable
+------
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.CloseProvisionerTransformer
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.CloseProvisionerTransformer with new graph:
+aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+  var.vpc_name - *terraform.NodeRootVariable
+aws_security_group_rule.api - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+  data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+  var.vpc_name - *terraform.NodeRootVariable
+meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  aws_security_group_rule.api - *terraform.NodeValidatableResource
+  aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+  aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+  aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+  data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+  data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+  module.minikube.output.eip - *terraform.NodeApplyableOutput
+  module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+  module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+  module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+  module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  output.minikube_info - *terraform.NodeApplyableOutput
+  provider.aws - *terraform.NodeApplyableProvider
+  var.aws_region - *terraform.NodeRootVariable
+  var.minikube_ami_id - *terraform.NodeRootVariable
+  var.vpc_name - *terraform.NodeRootVariable
+module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  provider.aws - *terraform.NodeApplyableProvider
+module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+  module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  provider.aws - *terraform.NodeApplyableProvider
+module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+module.minikube.output.eip - *terraform.NodeApplyableOutput
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  var.minikube_ami_id - *terraform.NodeRootVariable
+module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  var.vpc_name - *terraform.NodeRootVariable
+output.minikube_info - *terraform.NodeApplyableOutput
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+  module.minikube.output.eip - *terraform.NodeApplyableOutput
+  module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+  module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+  module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+provider.aws - *terraform.NodeApplyableProvider
+  var.aws_region - *terraform.NodeRootVariable
+provider.aws (close) - *terraform.graphNodeCloseProvider
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  aws_security_group_rule.api - *terraform.NodeValidatableResource
+  aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+  aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+  aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+  data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+  data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+provisioner.remote-exec (close) - *terraform.graphNodeCloseProvisioner
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+var.aws_region - *terraform.NodeRootVariable
+var.minikube_ami_id - *terraform.NodeRootVariable
+var.vpc_name - *terraform.NodeRootVariable
+------
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.RootTransformer
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+  var.vpc_name - *terraform.NodeRootVariable
+aws_security_group_rule.api - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+  data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+  var.vpc_name - *terraform.NodeRootVariable
+meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  aws_security_group_rule.api - *terraform.NodeValidatableResource
+  aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+  aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+  aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+  data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+  data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+  module.minikube.output.eip - *terraform.NodeApplyableOutput
+  module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+  module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+  module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+  module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  output.minikube_info - *terraform.NodeApplyableOutput
+  provider.aws - *terraform.NodeApplyableProvider
+  var.aws_region - *terraform.NodeRootVariable
+  var.minikube_ami_id - *terraform.NodeRootVariable
+  var.vpc_name - *terraform.NodeRootVariable
+module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  provider.aws - *terraform.NodeApplyableProvider
+module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+  module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  provider.aws - *terraform.NodeApplyableProvider
+module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+module.minikube.output.eip - *terraform.NodeApplyableOutput
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  var.minikube_ami_id - *terraform.NodeRootVariable
+module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  var.vpc_name - *terraform.NodeRootVariable
+output.minikube_info - *terraform.NodeApplyableOutput
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+  module.minikube.output.eip - *terraform.NodeApplyableOutput
+  module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+  module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+  module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+provider.aws - *terraform.NodeApplyableProvider
+  var.aws_region - *terraform.NodeRootVariable
+provider.aws (close) - *terraform.graphNodeCloseProvider
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  aws_security_group_rule.api - *terraform.NodeValidatableResource
+  aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+  aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+  aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+  data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+  data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+provisioner.remote-exec (close) - *terraform.graphNodeCloseProvisioner
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+root - terraform.graphNodeRoot
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  provider.aws (close) - *terraform.graphNodeCloseProvider
+  provisioner.remote-exec (close) - *terraform.graphNodeCloseProvisioner
+var.aws_region - *terraform.NodeRootVariable
+var.minikube_ami_id - *terraform.NodeRootVariable
+var.vpc_name - *terraform.NodeRootVariable
+------
+2019/06/19 14:41:37 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2019/06/19 14:41:37 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+  data.aws_vpc.vpc - *terraform.NodeValidatableResource
+aws_security_group_rule.api - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+  data.aws_vpc.vpc - *terraform.NodeValidatableResource
+data.aws_vpc.vpc - *terraform.NodeValidatableResource
+  data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+data.aws_vpcs.vpc_list - *terraform.NodeValidatableResource
+  provider.aws - *terraform.NodeApplyableProvider
+  var.vpc_name - *terraform.NodeRootVariable
+meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  aws_security_group_rule.api - *terraform.NodeValidatableResource
+  aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+  aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+  aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+  output.minikube_info - *terraform.NodeApplyableOutput
+module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+  module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+  module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+  module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+module.minikube.output.eip - *terraform.NodeApplyableOutput
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+module.minikube.provisioner.remote-exec - *terraform.NodeProvisioner
+module.minikube.var.key_name - *terraform.NodeApplyableModuleVariable
+module.minikube.var.key_path - *terraform.NodeApplyableModuleVariable
+module.minikube.var.minikube_ami - *terraform.NodeApplyableModuleVariable
+  var.minikube_ami_id - *terraform.NodeRootVariable
+module.minikube.var.security_group_id - *terraform.NodeApplyableModuleVariable
+  aws_security_group.minikube_sg - *terraform.NodeValidatableResource
+module.minikube.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  data.aws_subnet_ids.public - *terraform.NodeValidatableResource
+module.minikube.var.vpc_name - *terraform.NodeApplyableModuleVariable
+  var.vpc_name - *terraform.NodeRootVariable
+output.minikube_info - *terraform.NodeApplyableOutput
+  module.minikube.output.ami_id - *terraform.NodeApplyableOutput
+  module.minikube.output.eip - *terraform.NodeApplyableOutput
+  module.minikube.output.eip_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_arn - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_az - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_name - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_public_dns - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_security_groups - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_subnet_id - *terraform.NodeApplyableOutput
+  module.minikube.output.instance_vpc_security_group_ids - *terraform.NodeApplyableOutput
+  module.minikube.output.kubeadm_token - *terraform.NodeApplyableOutput
+provider.aws - *terraform.NodeApplyableProvider
+  var.aws_region - *terraform.NodeRootVariable
+provider.aws (close) - *terraform.graphNodeCloseProvider
+  aws_security_group_rule.api - *terraform.NodeValidatableResource
+  aws_security_group_rule.dashboard - *terraform.NodeValidatableResource
+  aws_security_group_rule.outbound - *terraform.NodeValidatableResource
+  aws_security_group_rule.ssh - *terraform.NodeValidatableResource
+  module.minikube.aws_eip.eip - *terraform.NodeValidatableResource
+provisioner.remote-exec (close) - *terraform.graphNodeCloseProvisioner
+  module.minikube.aws_instance.minikube - *terraform.NodeValidatableResource
+root - terraform.graphNodeRoot
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  provider.aws (close) - *terraform.graphNodeCloseProvider
+  provisioner.remote-exec (close) - *terraform.graphNodeCloseProvisioner
+var.aws_region - *terraform.NodeRootVariable
+var.minikube_ami_id - *terraform.NodeRootVariable
+var.vpc_name - *terraform.NodeRootVariable
+------
+2019/06/19 14:41:37 [DEBUG] Starting graph walk: walkValidate
+2019/06/19 14:41:37 [TRACE] dag/walk: updating graph
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.output.instance_security_groups"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "provider.aws"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.output.ami_id"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "var.minikube_ami_id"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.output.instance_id"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "output.minikube_info"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.output.instance_name"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.provisioner.remote-exec"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.output.eip"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "root"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.var.key_path"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "data.aws_vpcs.vpc_list"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.output.kubeadm_token"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.output.instance_az"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.output.instance_public_dns"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "aws_security_group_rule.outbound"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.var.subnet_id"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.var.vpc_name"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "var.vpc_name"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "aws_security_group.minikube_sg"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "provider.aws (close)"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "data.aws_vpc.vpc"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "meta.count-boundary (EachMode fixup)"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "data.aws_subnet_ids.public"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "aws_security_group_rule.api"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.output.instance_arn"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.output.instance_subnet_id"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.aws_instance.minikube"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.var.minikube_ami"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.aws_eip.eip"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "var.aws_region"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.output.eip_public_dns"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.output.instance_vpc_security_group_ids"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "provisioner.remote-exec (close)"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "aws_security_group_rule.ssh"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.var.key_name"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "module.minikube.var.security_group_id"
+2019/06/19 14:41:37 [TRACE] dag/walk: added new vertex: "aws_security_group_rule.dashboard"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "aws_security_group_rule.dashboard"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.output.instance_name" waiting on "module.minikube.aws_instance.minikube"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.output.instance_id" waiting on "module.minikube.aws_instance.minikube"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "aws_security_group.minikube_sg" waiting on "data.aws_vpc.vpc"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "provider.aws (close)" waiting on "aws_security_group_rule.api"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "output.minikube_info"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "root" waiting on "provider.aws (close)"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.output.eip_public_dns" waiting on "module.minikube.aws_eip.eip"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "root" waiting on "meta.count-boundary (EachMode fixup)"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.aws_instance.minikube" waiting on "module.minikube.provisioner.remote-exec"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.aws_instance.minikube" waiting on "module.minikube.var.vpc_name"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "output.minikube_info" waiting on "module.minikube.output.ami_id"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "aws_security_group_rule.outbound" waiting on "aws_security_group.minikube_sg"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "data.aws_vpc.vpc" waiting on "data.aws_vpcs.vpc_list"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "output.minikube_info" waiting on "module.minikube.output.instance_security_groups"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.output.instance_public_dns" waiting on "module.minikube.aws_instance.minikube"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.var.subnet_id" waiting on "data.aws_subnet_ids.public"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "data.aws_vpcs.vpc_list" waiting on "provider.aws"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "output.minikube_info" waiting on "module.minikube.output.kubeadm_token"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "output.minikube_info" waiting on "module.minikube.output.instance_arn"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "aws_security_group_rule.api" waiting on "aws_security_group.minikube_sg"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.var.security_group_id" waiting on "aws_security_group.minikube_sg"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "output.minikube_info" waiting on "module.minikube.output.instance_az"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.aws_instance.minikube" waiting on "module.minikube.var.security_group_id"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "output.minikube_info" waiting on "module.minikube.output.instance_vpc_security_group_ids"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "provisioner.remote-exec (close)" waiting on "module.minikube.aws_instance.minikube"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "root" waiting on "provisioner.remote-exec (close)"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.output.ami_id" waiting on "module.minikube.var.minikube_ami"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.var.minikube_ami" waiting on "var.minikube_ami_id"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "provider.aws" waiting on "var.aws_region"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.aws_instance.minikube" waiting on "module.minikube.var.key_path"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "provider.aws (close)" waiting on "aws_security_group_rule.ssh"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.output.instance_security_groups" waiting on "module.minikube.aws_instance.minikube"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.output.instance_arn" waiting on "module.minikube.aws_instance.minikube"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.aws_instance.minikube" waiting on "module.minikube.var.key_name"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.var.vpc_name" waiting on "var.vpc_name"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "data.aws_subnet_ids.public" waiting on "data.aws_vpc.vpc"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "aws_security_group_rule.ssh" waiting on "aws_security_group.minikube_sg"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.aws_eip.eip" waiting on "module.minikube.aws_instance.minikube"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "provider.aws (close)" waiting on "aws_security_group_rule.dashboard"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "provider.aws (close)" waiting on "aws_security_group_rule.outbound"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "aws_security_group_rule.api"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.aws_instance.minikube" waiting on "module.minikube.var.minikube_ami"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "output.minikube_info" waiting on "module.minikube.output.eip_public_dns"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.output.eip" waiting on "module.minikube.aws_eip.eip"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "output.minikube_info" waiting on "module.minikube.output.instance_public_dns"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "output.minikube_info" waiting on "module.minikube.output.instance_name"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "aws_security_group_rule.dashboard" waiting on "aws_security_group.minikube_sg"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "aws_security_group_rule.ssh"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "aws_security_group_rule.outbound"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "provider.aws (close)" waiting on "module.minikube.aws_eip.eip"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "output.minikube_info" waiting on "module.minikube.output.instance_subnet_id"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.aws_instance.minikube" waiting on "module.minikube.var.subnet_id"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "output.minikube_info" waiting on "module.minikube.output.instance_id"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.output.instance_subnet_id" waiting on "module.minikube.aws_instance.minikube"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "output.minikube_info" waiting on "module.minikube.output.eip"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.output.instance_vpc_security_group_ids" waiting on "module.minikube.aws_instance.minikube"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "data.aws_vpcs.vpc_list" waiting on "var.vpc_name"
+2019/06/19 14:41:37 [TRACE] dag/walk: added edge: "module.minikube.output.instance_az" waiting on "module.minikube.aws_instance.minikube"
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "module.minikube.output.eip_public_dns", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "aws_security_group_rule.outbound", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "module.minikube.output.instance_az", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "module.minikube.output.instance_id", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "output.minikube_info", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "module.minikube.var.subnet_id", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "module.minikube.output.instance_subnet_id", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "aws_security_group_rule.dashboard", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "module.minikube.output.instance_name", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "provider.aws (close)", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "module.minikube.var.vpc_name", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "data.aws_subnet_ids.public", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "module.minikube.output.eip", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "meta.count-boundary (EachMode fixup)", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "root", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "module.minikube.output.instance_arn", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "module.minikube.aws_eip.eip", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "module.minikube.var.security_group_id", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "module.minikube.output.ami_id", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "provider.aws", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "module.minikube.output.instance_security_groups", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "aws_security_group_rule.ssh", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "module.minikube.aws_instance.minikube", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "module.minikube.var.minikube_ami", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "provisioner.remote-exec (close)", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "module.minikube.output.instance_vpc_security_group_ids", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "aws_security_group.minikube_sg", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "data.aws_vpc.vpc", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "module.minikube.output.instance_public_dns", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "data.aws_vpcs.vpc_list", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: dependencies changed for "aws_security_group_rule.api", sending new deps
+2019/06/19 14:41:37 [TRACE] dag/walk: visiting "var.aws_region"
+2019/06/19 14:41:37 [TRACE] vertex "var.aws_region": starting visit (*terraform.NodeRootVariable)
+2019/06/19 14:41:37 [TRACE] dag/walk: visiting "module.minikube.var.key_name"
+2019/06/19 14:41:37 [TRACE] vertex "var.aws_region": visit complete
+2019/06/19 14:41:37 [TRACE] vertex "module.minikube.var.key_name": starting visit (*terraform.NodeApplyableModuleVariable)
+2019/06/19 14:41:37 [TRACE] dag/walk: visiting "module.minikube.output.kubeadm_token"
+2019/06/19 14:41:37 [TRACE] vertex "module.minikube.output.kubeadm_token": starting visit (*terraform.NodeApplyableOutput)
+2019/06/19 14:41:37 [TRACE] vertex "module.minikube.var.key_name": evaluating
+2019/06/19 14:41:37 [TRACE] dag/walk: visiting "var.minikube_ami_id"
+2019/06/19 14:41:37 [TRACE] [walkValidate] Entering eval tree: module.minikube.var.key_name
+2019/06/19 14:41:37 [TRACE] vertex "var.minikube_ami_id": starting visit (*terraform.NodeRootVariable)
+2019/06/19 14:41:37 [TRACE] dag/walk: visiting "var.vpc_name"
+2019/06/19 14:41:37 [TRACE] dag/walk: visiting "module.minikube.var.key_path"
+2019/06/19 14:41:37 [TRACE] <root>: eval: *terraform.EvalSequence
+2019/06/19 14:41:37 [TRACE] vertex "var.vpc_name": starting visit (*terraform.NodeRootVariable)
+2019/06/19 14:41:37 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2019/06/19 14:41:37 [TRACE] vertex "module.minikube.var.key_path": starting visit (*terraform.NodeApplyableModuleVariable)
+2019/06/19 14:41:37 [TRACE] <root>: eval: *terraform.EvalModuleCallArgument
+2019/06/19 14:41:37 [TRACE] vertex "module.minikube.var.key_path": evaluating
+2019/06/19 14:41:37 [TRACE] [walkValidate] Entering eval tree: module.minikube.var.key_path
+2019/06/19 14:41:37 [TRACE] <root>: eval: *terraform.EvalSequence
+2019/06/19 14:41:37 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2019/06/19 14:41:37 [TRACE] <root>: eval: *terraform.EvalModuleCallArgument
+2019/06/19 14:41:37 [TRACE] vertex "module.minikube.output.kubeadm_token": evaluating
+2019/06/19 14:41:37 [TRACE] [walkValidate] Entering eval tree: module.minikube.output.kubeadm_token
+2019/06/19 14:41:37 [TRACE] module.minikube: eval: *terraform.EvalSequence
+2019/06/19 14:41:37 [TRACE] module.minikube: eval: *terraform.EvalOpFilter
+2019/06/19 14:41:37 [TRACE] module.minikube: eval: *terraform.EvalWriteOutput
+2019/06/19 14:41:37 [TRACE] vertex "var.minikube_ami_id": visit complete
+2019/06/19 14:41:37 [TRACE] <root>: eval: *terraform.EvalSetModuleCallArguments
+2019/06/19 14:41:37 [TRACE] dag/walk: visiting "provider.aws"
+2019/06/19 14:41:37 [TRACE] <root>: eval: *terraform.EvalSetModuleCallArguments
+2019/06/19 14:41:37 [TRACE] dag/walk: visiting "module.minikube.var.minikube_ami"
+2019/06/19 14:41:37 [TRACE] [walkValidate] Exiting eval tree: module.minikube.var.key_path
+2019/06/19 14:41:37 [TRACE] vertex "module.minikube.var.minikube_ami": starting visit (*terraform.NodeApplyableModuleVariable)
+2019/06/19 14:41:37 [TRACE] vertex "provider.aws": starting visit (*terraform.NodeApplyableProvider)
+2019/06/19 14:41:37 [TRACE] dag/walk: visiting "module.minikube.provisioner.remote-exec"
+2019/06/19 14:41:37 [TRACE] vertex "module.minikube.var.minikube_ami": evaluating
+2019/06/19 14:41:37 [TRACE] vertex "module.minikube.provisioner.remote-exec": starting visit (*terraform.NodeProvisioner)
+2019/06/19 14:41:37 [TRACE] [walkValidate] Entering eval tree: module.minikube.var.minikube_ami
+2019/06/19 14:41:37 [TRACE] vertex "provider.aws": evaluating
+2019/06/19 14:41:37 [TRACE] vertex "module.minikube.provisioner.remote-exec": evaluating
+2019/06/19 14:41:37 [TRACE] [walkValidate] Entering eval tree: provider.aws
+2019/06/19 14:41:37 [TRACE] vertex "module.minikube.output.kubeadm_token": visit complete
+2019/06/19 14:41:37 [TRACE] <root>: eval: *terraform.EvalSequence
+panic: output value read from module.minikube.module.kubeadm_token, which has no configuration
+
+goroutine 159 [running]:
+github.com/hashicorp/terraform/terraform.(*evaluationStateData).GetModuleInstance(0xc000422b40, 0xc00057f670, 0xd, 0x0, 0x0, 0xc0005a42a0, 0x21, 0x2f, 0xb, 0x321, ...)
+	/opt/gopath/src/github.com/hashicorp/terraform/terraform/evaluate.go:323 +0xae6
+github.com/hashicorp/terraform/lang.(*Scope).evalContext(0xc000668be0, 0xc000412350, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0, 0x7f1e79abe878, 0x0)
+	/opt/gopath/src/github.com/hashicorp/terraform/lang/eval.go:269 +0xae1
+github.com/hashicorp/terraform/lang.(*Scope).EvalContext(...)
+	/opt/gopath/src/github.com/hashicorp/terraform/lang/eval.go:160
+github.com/hashicorp/terraform/lang.(*Scope).EvalExpr(0xc000668be0, 0x1fe9e00, 0xc00031efc0, 0x1feb000, 0x2f69920, 0xc000181760, 0x434d6c, 0xc00095b500, 0x3, 0xc000050070, ...)
+	/opt/gopath/src/github.com/hashicorp/terraform/lang/eval.go:87 +0xb3
+github.com/hashicorp/terraform/terraform.(*BuiltinEvalContext).EvaluateExpr(0xc000997860, 0x1fe9e00, 0xc00031efc0, 0x1feb000, 0x2f69920, 0x0, 0x0, 0x2f49c80, 0x4e, 0x1c5d928, ...)
+	/opt/gopath/src/github.com/hashicorp/terraform/terraform/eval_context_builtin.go:284 +0x1e4
+github.com/hashicorp/terraform/terraform.(*EvalWriteOutput).Eval(0xc0008d4c60, 0x2017bc0, 0xc000997860, 0x2, 0x2, 0xc00053e000, 0x4b)
+	/opt/gopath/src/github.com/hashicorp/terraform/terraform/eval_output.go:48 +0x153
+github.com/hashicorp/terraform/terraform.EvalRaw(0x1fafee0, 0xc0008d4c60, 0x2017bc0, 0xc000997860, 0x36, 0x0, 0x0, 0x36)
+	/opt/gopath/src/github.com/hashicorp/terraform/terraform/eval.go:57 +0x131
+github.com/hashicorp/terraform/terraform.(*EvalOpFilter).Eval(0xc0008d4c90, 0x2017bc0, 0xc000997860, 0x2, 0x2, 0xc000181b38, 0x42b7e1)
+	/opt/gopath/src/github.com/hashicorp/terraform/terraform/eval_filter_operation.go:37 +0x4c
+github.com/hashicorp/terraform/terraform.EvalRaw(0x1fafca0, 0xc0008d4c90, 0x2017bc0, 0xc000997860, 0x14, 0xbf3abe58717d8bb0, 0x47203a47, 0x36)
+	/opt/gopath/src/github.com/hashicorp/terraform/terraform/eval.go:57 +0x131
+github.com/hashicorp/terraform/terraform.(*EvalSequence).Eval(0xc0003f6980, 0x2017bc0, 0xc000997860, 0x2, 0x2, 0xe8c2b5, 0x1fafca0)
+	/opt/gopath/src/github.com/hashicorp/terraform/terraform/eval_sequence.go:20 +0xfd
+github.com/hashicorp/terraform/terraform.EvalRaw(0x1fafde0, 0xc0003f6980, 0x2017bc0, 0xc000997860, 0x18e1960, 0x2e20fc5, 0x1856a20, 0xc000ac6570)
+	/opt/gopath/src/github.com/hashicorp/terraform/terraform/eval.go:57 +0x131
+github.com/hashicorp/terraform/terraform.Eval(0x1fafde0, 0xc0003f6980, 0x2017bc0, 0xc000997860, 0xc0003f6980, 0x1fafde0, 0xc0003f6980, 0x0)
+	/opt/gopath/src/github.com/hashicorp/terraform/terraform/eval.go:35 +0x4d
+github.com/hashicorp/terraform/terraform.(*Graph).walk.func1(0x1a82960, 0xc000976db0, 0x0, 0x0, 0x0)
+	/opt/gopath/src/github.com/hashicorp/terraform/terraform/graph.go:90 +0xf40
+github.com/hashicorp/terraform/dag.(*Walker).walkVertex(0xc00010e100, 0x1a82960, 0xc000976db0, 0xc00097a780)
+	/opt/gopath/src/github.com/hashicorp/terraform/dag/walk.go:392 +0x353
+created by github.com/hashicorp/terraform/dag.(*Walker).Update
+	/opt/gopath/src/github.com/hashicorp/terraform/dag/walk.go:314 +0xa9b
