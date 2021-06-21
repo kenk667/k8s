@@ -18,7 +18,7 @@ sudo apt-get -y install awscli #sipcalc
 
 # Configure git
 git config --global user.name "Ken Kato"
-git config --global user.email "kkato@kr.af.mil"
+git config --global user.email "..."
 
 # Instals fly CLI
 wget https://github.com/concourse/concourse/releases/download/v${FLY_CLI_VERSION}/fly-${FLY_CLI_VERSION}-linux-amd64.tgz
